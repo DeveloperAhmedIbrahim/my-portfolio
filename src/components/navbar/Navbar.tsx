@@ -13,7 +13,6 @@ const navLinks = [
     {href: '#about', label: "About"},
     {href: '#projects', label: "Projects"},
     {href: '#experience', label: "Experience"},
-    {href: '#testimonials', label: "Testimonials"},
     {href: '#contact', label: "Contact"},
 ]
 
@@ -22,7 +21,7 @@ const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-            setScrolled(window.screenY > 40);
+            setScrolled(window.scrollY > 40);
         }
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
