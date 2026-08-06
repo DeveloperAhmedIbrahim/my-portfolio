@@ -42,7 +42,7 @@ const HeroSection = () => {
                     </div>
                 </div>
                 {/* right side */}
-                <div className="flex justify-center lg:justify-end">
+                <div className="hidden md:flex justify-center lg:justify-end">
                     <div className="relative w-85 h-85 md:w-110 md:h-110 rounded-full bg-surface/80 backdrop-blur-md border border-border flex items-center justify-center">
                         <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl"></div>
                         <Image src="/images/profile.jpeg" alt="profile" fill className="rounded-full object-cover" />
