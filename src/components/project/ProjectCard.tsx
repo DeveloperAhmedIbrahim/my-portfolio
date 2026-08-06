@@ -20,7 +20,7 @@ const ProjectCard = ({
     return (
         <div className="group relative overflow-hidden rounded-2xl bg-surface border border-border transition-all duration-300 hover:-translate-x-1 hover:border-primary/50 hover:shadow-lg">
             {/* image */}
-            <div className="relative h-60 md:h-64 overflow-hidden">
+            <div className="relative h-80 md:h-84 overflow-hidden">
                 <Image src={image} alt={title} fill className="w-full h-full object-cover transition duration-500 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition"></div>
             </div>
