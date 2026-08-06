@@ -60,7 +60,7 @@ const ExperienceSection = () => {
                                         <span className="text-primary text-sm font-medium">{experience.period}</span>
                                         <h3 className="text-xl font-semibold mt-2">{experience.role}</h3>
                                         <p className="text-gray-300">{experience.company}</p>
-                                        <p className="text-sm text-gray-400 mt-4 text-justify">{experience.description}</p>
+                                        <p className="text-sm text-gray-400 mt-4 text-left">{experience.description}</p>
                                         <div className={`flex flex-wrap gap-2 mt-4 ${index % 2 === 0 ? "md:justify-end" : "md:justify-start"}`}>
                                             {experience.technologies.map((technology, techIndex) => (
                                                 <span key={techIndex} className="px-3 py-1 bg-surface text-sx rounded-full text-gray-300">{technology}</span>        

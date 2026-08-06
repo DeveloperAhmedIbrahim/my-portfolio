@@ -91,15 +91,15 @@ const ContactSection = () => {
                         <div className="text-xl font-semibold mb-6">Contact Information</div>
                         <div className="space-y-4">
                             {contactInfo.map((item, index) => (
-                                <a key={index} href={item.href} className="flex items-center gap-4 p-4 rounded-xl hover:bg-surface transition-colors group">
-                                    <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                                <a key={index} href={item.href} className="flex items-center gap-4 md:p-4 rounded-xl hover:bg-surface transition-colors group">
+                                    <div className="md:w-12 md:h-12 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                                         <item.icon className="w-5 h-5 text-primary" />
                                     </div>
                                     <div>
                                         <div className="text-gray-400 text-sm">
                                             {item.label}
                                         </div>
-                                        <div className="font-medium">
+                                        <div className="font-medium text-sm">
                                             {item.value}
                                         </div>                                        
                                     </div>
