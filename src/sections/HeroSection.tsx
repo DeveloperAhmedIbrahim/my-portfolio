@@ -26,23 +26,23 @@ const HeroSection = () => {
             <div className="relative z-10 w-[90%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                 {/* left side */}
                 <div className="space-y-6">
-                    <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm  border border-border">
+                    <span data-aos="fade-up" className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm  border border-border">
                         Full Stack Web Developer
                     </span>
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text/90">
+                    <h1 data-aos="fade-up" data-aos-delay="200" className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-text/90">
                         Building scalable solutions with <br />  
                         <span className="text-primary/70">clean code</span>
                     </h1>
-                    <p className="text-gray-400 max-w-lg tracking-wide">
+                    <p data-aos="fade-up" data-aos-delay="400" className="text-gray-400 max-w-lg tracking-wide">
                         I design and build scalable fullstack applications using modern technologies like ReactJS, Tailwind CSS, ExpressJS, Laravel. Focused on performance, clean UI and real-world products.
                     </p>
-                    <div className="flex items-center gap-4 pt-2">
+                    <div data-aos="fade-up" data-aos-delay="600" className="flex items-center gap-4 pt-2">
                         <LinkButton text="Get In Touch" href="#contact" icon={LuArrowRight} rounded />
                         <LinkButton text="View Projects" href="#projects" variant="outline" rounded />
                     </div>
                 </div>
                 {/* right side */}
-                <div className="hidden md:flex justify-center lg:justify-end">
+                <div data-aos="fade-left" className="hidden md:flex justify-center lg:justify-end">
                     <div className="relative w-85 h-85 md:w-110 md:h-110 rounded-full bg-surface/80 backdrop-blur-md border border-border flex items-center justify-center">
                         <div className="absolute inset-0 rounded-full bg-primary/20 blur-3xl"></div>
                         <Image src="/images/profile.jpeg" alt="profile" fill className="rounded-full object-cover" />

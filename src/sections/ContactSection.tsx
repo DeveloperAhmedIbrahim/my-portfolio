@@ -56,7 +56,7 @@ const ContactSection = () => {
                 <SectionHeader title="Let's build" highlight="something great" badge="Contact" description="Have a project in mind? I'd love to hear about it. Let's connect."/>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* left - form */}
-                    <form onSubmit={onSubmit} className="p-6 rounded-2xl bg-surface border border-border space-y-5">
+                    <form data-aos="flip-right" data-aos-delay="100" data-aos-anchor-placement="top-center" onSubmit={onSubmit} className="p-6 rounded-2xl bg-surface border border-border space-y-5">
                         <h3 className="text-lg font-semibold text-text">Send a message</h3>
                         {/* name */}
                         <div>
@@ -87,7 +87,7 @@ const ContactSection = () => {
                         </button>                                           
                     </form>
                     {/* right - contact info */}
-                    <div className="p-2">
+                    <div data-aos="flip-left" data-aos-delay="100" data-aos-anchor-placement="top-center" className="p-2">
                         <div className="text-xl font-semibold mb-6">Contact Information</div>
                         <div className="space-y-4">
                             {contactInfo.map((item, index) => (
