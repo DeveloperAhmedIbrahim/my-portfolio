@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
-import { link } from "fs";
 import Link from "next/link";
 import LinkButton from "../ui/LinkButton";
 import { LuDownload, LuMenu, LuX } from "react-icons/lu";
