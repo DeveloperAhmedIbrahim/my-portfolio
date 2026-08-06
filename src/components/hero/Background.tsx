@@ -1,4 +1,5 @@
 'use client';
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React, { useRef, useEffect, useCallback, useMemo } from 'react';
 import { gsap } from 'gsap';
 import { InertiaPlugin } from 'gsap/InertiaPlugin';
@@ -7,9 +8,9 @@ import '@/app/globals.css';
 
 gsap.registerPlugin(InertiaPlugin);
 
-const throttle = <T extends (...args: unknown[]) => void>(func: T, limit: number) => {
+const throttle = (func: (...args: any[]) => void, limit: number) => {
   let lastCall = 0;
-  return function (this: ThisParameterType<T>, ...args: Parameters<T>) {
+  return function (this: any, ...args: any[]) {
     const now = performance.now();
     if (now - lastCall >= limit) {
       lastCall = now;
@@ -182,9 +183,7 @@ const DotGrid: React.FC<DotGridProps> = ({
     let ro: ResizeObserver | null = null;
     if ('ResizeObserver' in window) {
       ro = new ResizeObserver(buildGrid);
-      if (wrapperRef.current) {
-        ro.observe(wrapperRef.current);
-      }
+      wrapperRef.current && ro.observe(wrapperRef.current);
     } else {
       (window as Window).addEventListener('resize', buildGrid);
     }
