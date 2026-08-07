@@ -11,7 +11,7 @@ const porjects = [
     },
     {
         title: "Hospital Management System",
-        description: "A full-featured, role-based hospital management platform supporting Admin, Doctor, Patient, Receptionist, Nurse, Lab, and Radiology panels. Features include appointment booking with dynamic slot generation, break-time exclusion, and past-slot validation, walk-in registration with auto-assigned queue tokens, a self-check-in kiosk with QR scan and payment simulation, doctor schedule management, email notifications and much more.",
+        description: "A full-featured, role-based hospital management platform supporting Admin, Doctor, Patient, Receptionist, Nurse, Lab, and Radiology panels. Features include appointment booking with dynamic slot generation, break-time exclusion, and past-slot validation, walk-in registration with auto-assigned queue tokens, a self-check-in kiosk with QR scan and payment simulation, doctor schedule management and much more.",
         image: "/images/project-06.png",
         tags: ["Laravel", "ReactJS", "MySQL", "TailwindCSS"],
         liveURL: "https://hms.techrevivals.net/"
